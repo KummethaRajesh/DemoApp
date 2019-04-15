@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+  <servlet>
+  	<servlet-name>add</servlet-name>
+  	<servlet-class>com.rajesh.AddServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>add</servlet-name>
+  	<url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>square</servlet-name>
+  	<servlet-class>com.rajesh.SquareServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>square</servlet-name>
+  	<url-pattern>/square</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>redirect</servlet-name>
+  	<servlet-class>com.rajesh.ServletRedirects</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>redirect</servlet-name>
+  	<url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>sessions</servlet-name>
+  	<servlet-class>com.rajesh.HttpSessions</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>sessions</servlet-name>
+  	<url-pattern>/sessions</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>cook</servlet-name>
+  	<servlet-class>com.rajesh.CookiesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cook</servlet-name>
+  	<url-pattern>/cook</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>context</servlet-name>
+  	<servlet-class>com.rajesh.ContextServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>context</servlet-name>
+  	<url-pattern>/context</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>config</servlet-name>
+  	<servlet-class>com.rajesh.ConfigServlet</servlet-class>
+  	<init-param>
+  		<param-name>name</param-name>
+  		<param-value>Hayati</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>config</servlet-name>
+  	<url-pattern>/config</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Rajesh</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>name</param-name>
+  	<param-value>Hayati	</param-value>
+  </context-param>
+  
+</web-app>
